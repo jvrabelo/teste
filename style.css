@@ -1,0 +1,30 @@
+/* Estilos para o corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para o conteúdo das abas */
+.content {
+    padding: 20px;
+}
+
+/* Estilo para esconder as abas */
+.hidden {
+    display: none;
+}
