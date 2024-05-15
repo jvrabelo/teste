@@ -1,64 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site sobre Agronomia</title>
-    <style>
-        /* Estilos simples para melhorar a apresentação */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin-right: 10px;
-            border-radius: 5px;
-        }
-        .content {
-            padding: 20px;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
+    <title>Agronomia: Uma Visão Geral</title>
 </head>
 <body>
+    <header>
+        <h1>Agronomia: Uma Visão Geral</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <!-- Adicione mais links para outras seções do texto, se desejar -->
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#" onclick="changeTab(1)">Sobre a Agricultura</a>
-    <a href="#" onclick="changeTab(2)">Tópicos Específicos em Agronomia</a>
-</nav>
-
-<div id="tab1" class="content">
-    <h2>Introdução</h2>
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
             <p>A agronomia é uma área multidisciplinar da ciência agrícola que se concentra no estudo e na prática do cultivo de plantas para produção de alimentos, fibras, medicamentos, biocombustíveis e outros produtos essenciais para a sociedade humana. É uma ciência vital para garantir a segurança alimentar global e promover o desenvolvimento sustentável.</p>
         </section>
-</div>
 
-<div id="tab2" class="content hidden">
-    <h1>Tópicos Específicos em Agronomia</h1>
-    <p>Técnicas de cultivo, manejo de pragas e doenças, tecnologia na agricultura, sustentabilidade.</p>
-</div>
+        <!-- Adicione mais seções conforme necessário -->
 
-<script>
-    function changeTab(tabIndex) {
-        // Esconder todas as abas
-        var tabs = document.getElementsByClassName('content');
-        for (var i = 0; i < tabs.length; i++) {
-            tabs[i].classList.add('hidden');
-        }
-        // Mostrar a aba selecionada
-        document.getElementById('tab' + tabIndex).classList.remove('hidden');
-    }
-</script>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Meu Site de Agronomia. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
