@@ -1,8 +1,8 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site sobre Agronomia</title>
     <style>
         /* Estilos simples para melhorar a apresentação */
@@ -29,3 +29,35 @@
             display: none;
         }
     </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="changeTab(1)">Introdução à Agronomia</a>
+    <a href="#" onclick="changeTab(2)">Tópicos Específicos em Agronomia</a>
+</nav>
+
+<div id="tab1" class="content">
+    <h1>Introdução à Agronomia</h1>
+    <p>Definição de agronomia, importância, áreas de estudo e perspectivas de carreira.</p>
+</div>
+
+<div id="tab2" class="content hidden">
+    <h1>Tópicos Específicos em Agronomia</h1>
+    <p>Técnicas de cultivo, manejo de pragas e doenças, tecnologia na agricultura, sustentabilidade.</p>
+</div>
+
+<script>
+    function changeTab(tabIndex) {
+        // Esconder todas as abas
+        var tabs = document.getElementsByClassName('content');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.add('hidden');
+        }
+        // Mostrar a aba selecionada
+        document.getElementById('tab' + tabIndex).classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
