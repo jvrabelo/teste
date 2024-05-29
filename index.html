@@ -3,84 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Agronomia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        nav {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background-color: #eee;
-        }
-
-        nav ul li a:hover {
-            background-color: #ddd;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
+    <title>Agronomia Econômica: Onde a Terra Encontra os Números</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Site de Agronomia</h1>
-        <nav>
-            <ul>
-                <li><a href="#introducao">Introdução</a></li>
-                <li><a href="#definicao">Definição de Agronomia</a></li>
-            </ul>
-        </nav>
+        <div class="banner">
+            <h1>Agronomia Econômica</h1>
+            <p>Onde a Terra Encontra os Números</p>
+        </div>
     </header>
 
+    <nav>
+        <!-- Links para outras páginas do site -->
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#artigos">Artigos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="introducao">
-            <h2>Introdução</h2>
-            <p>Bem-vindo ao nosso site de agronomia! Aqui você encontrará informações sobre esta fascinante área da ciência agrícola.</p>
+        <section id="sobre">
+            <!-- Seção Sobre -->
+            <h2>Sobre</h2>
+            <p>Visão geral da agronomia econômica e sua importância na agricultura moderna.</p>
+            <p>Conheça nossa equipe de especialistas e suas contribuições para o campo da agronomia econômica.</p>
         </section>
 
-        <section id="definicao">
-            <h2>Definição de Agronomia</h2>
-            <p>A agronomia é a ciência que estuda as práticas agrícolas e o manejo dos recursos naturais visando à produção agrícola sustentável. Ela engloba diversas áreas, incluindo ciência do solo, fisiologia vegetal, melhoramento genético, manejo integrado de pragas e doenças, entre outras.</p>
+        <section id="artigos">
+            <!-- Seção de Artigos/Recursos -->
+            <h2>Artigos e Recursos</h2>
+            <p>Explore nossos artigos sobre gestão de custos agrícolas, análise de mercado, tecnologia na agricultura e muito mais.</p>
+            <!-- Lista de artigos -->
+            <ul>
+                <li><a href="#">Gestão de Custos Agrícolas</a></li>
+                <li><a href="#">Análise de Mercado</a></li>
+                <li><a href="#">Tecnologia na Agricultura</a></li>
+                <!-- Adicione mais links para outros tópicos -->
+            </ul>
+        </section>
+
+        <section id="servicos">
+            <!-- Seção de Serviços -->
+            <h2>Serviços</h2>
+            <p>Descubra como nossa consultoria em agronomia econômica pode ajudar a otimizar seus negócios agrícolas.</p>
+            <p>Explore nossos programas de treinamento e educação para expandir seu conhecimento na área.</p>
+        </section>
+
+        <section id="contato">
+            <!-- Seção de Contato -->
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para obter mais informações sobre nossos serviços ou para agendar uma consulta.</p>
+            <!-- Formulário de Contato -->
+            <form action="enviar.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Agronomia Econômica. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
